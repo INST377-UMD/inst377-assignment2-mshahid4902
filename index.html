@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST377 - Activities</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>INST377 - Activities</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>These are some different activities we can try!</h2>
+        <div class="button-container">
+            <button id="stocksBtn" class="custom-btn" role="button" onclick="location.href='stocks.html'">Stocks</button>
+            <button id="dogsBtn" class="custom-btn" role="button" onclick="location.href='dogs.html'">Dogs</button>
+        </div>
+
+        <section id="quote-box">
+            <h3>Quote of the Page Load</h3>
+            <p id="quote-text">Loading...</p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="audio-controls">
+            <h3>In this web page there are options to Navigate using Audio!</h3>
+            <p>Ensure your Mic is enabled to be able to use this feature</p>
+            <ul>
+                <li><strong>Navigate to a Different Page -</strong> <code>Say: Navigate to &lt;page&gt;</code></li>
+                <li><strong>Change the Page Color -</strong> <code>Say: Change the color to &lt;color&gt;</code></li>
+                <li><strong>Say Hello Back to you -</strong> <code>Say: Hello</code></li>
+            </ul>
+            <button id="listen-on" class="custom-btn">Turn On Listening</button>
+            <button id="listen-off" class="custom-btn">Turn Off Listening</button>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

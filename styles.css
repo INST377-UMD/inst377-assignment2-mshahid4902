@@ -1,0 +1,178 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    color: black;
+    text-align: left;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: tomato;
+    border: 1px solid black;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar li:hover {
+    background-color: wheat;
+    transition: 0.3s ease;
+}
+
+h2 {
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.custom-btn {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.custom-btn:hover,
+.custom-btn:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.custom-btn:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.custom-btn {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+#lookupBtn {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#quote-box {
+    background-color: lavender;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+}
+
+#stocksTable {
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+#stocksTable th,
+#stocksTable td {
+    border: 1px solid black;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+#dogCarousel {
+    max-width: 1200px;
+    max-height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#dogCarousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.breed-button {
+    margin: 5px;
+}
+
+.breed-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+.breed-info-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: lavender;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.audio-controls {
+    background-color: lavender;
+    color: black;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.audio-controls ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.audio-controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
